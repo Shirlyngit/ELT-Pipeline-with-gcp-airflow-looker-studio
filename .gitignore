@@ -1,0 +1,66 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+
+# --- Virtual environments ---
+.env
+.venv/
+env/
+env.bak/
+venv/
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/
+airflow_logs/
+*.out
+*.err
+
+# --- Airflow ---
+airflow.cfg
+unittests.cfg
+webserver_config.py
+dags/__pycache__/
+dags/*.pyc
+# If you store connections in a local env file
+airflow_env/
+airflow.db
+airflow.db-journal
+
+# --- GCP / Cloud ---
+# Service account keys and configs
+*.json
+*.yaml
+*.yml
+*.ini
+credentials/
+gcp_keys/
+service_account.json
+config/
+
+# --- Looker Studio ---
+# Usually dashboard configs are online, but just in case:
+*.looker
+
+# --- IDE files ---
+.vscode/
+.idea/
+*.iml
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Environment variables ---
+.env.local
+.env.production
+.env.development
